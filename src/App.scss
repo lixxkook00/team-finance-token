@@ -1,0 +1,27 @@
+@import '../public/scss/utils';
+@import '../public/scss/variables';
+
+*{
+    font-family: "Helvetica Neue",
+    Roboto;
+    box-sizing: border-box;
+}
+
+.App{
+    position: relative;
+}
+
+.overlay{
+    height: 481px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, #1E66DF 10%, #0C4AB2 90%);
+    z-index: -1;
+}
+
+// clear p tag
+p {
+    margin-bottom: 0;
+}

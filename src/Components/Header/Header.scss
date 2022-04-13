@@ -1,0 +1,61 @@
+@import '../../../public/scss/variables';
+
+.header{
+    display: flex;
+    // background-color: $primary-blue;
+    padding: 20px 0px;
+
+    &-logo{
+        height: 50px;
+        img{
+            height: 100%;
+        }
+    }
+
+    &-ul{
+        width: 600px;
+        flex-flow: row wrap;
+        display: flex;
+        justify-content: center;
+    }
+
+    &-li{
+        display: flex;
+        -webkit-box-pack: start;
+        justify-content: center;
+        -webkit-box-align: center;
+        // align-items: center;
+        opacity: 0.5;
+        margin: 0px 15px;
+        text-align: center;
+        transition: all 0.2s ease;
+
+        &:hover{
+            cursor: pointer;
+            color: #fff !important;
+            opacity: 1;
+        }
+
+        &-icon{
+            width: auto;
+            height: 15px;
+            object-fit: contain;
+            margin-right: 7px;
+            img{
+                height: 100%;
+            }
+        }
+
+        &-text{
+            font-family: "Helvetica Neue",
+            Roboto;
+            font-size: 18px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.07px;
+            color: rgb(255, 255, 255);
+        }
+    }
+}
