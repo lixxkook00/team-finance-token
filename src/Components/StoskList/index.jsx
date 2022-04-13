@@ -157,6 +157,11 @@ function StoskList(props) {
                                 }
                             </tbody>
                         </table>
+                        <div className="view-all-coins">
+                            <a href="">
+                                VIEW ALL COINS
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>

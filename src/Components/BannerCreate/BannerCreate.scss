@@ -1,0 +1,40 @@
+
+
+.banner{
+    font-family: Helvetica Neue,
+    Roboto;
+
+    color: #fff;
+    background-image: linear-gradient(180deg, #1E66DF 10%, #0C4AB2 90%);
+
+    &-content{
+        -webkit-box-pack: center;
+        justify-content: center;
+        margin: 70px 0px 0px;
+
+        &-title{
+            font-size: 30px;
+            font-weight: 500;
+            text-align: left;
+            color: rgb(255, 255, 255);
+            margin-bottom: 20px;
+        }
+        &-decs{
+            width: 500px;
+            font-size: 20px;
+            line-height: 1.45;
+            letter-spacing: 0.11px;
+            text-align: left;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 45px;
+        }
+    }
+
+    &-img{
+        margin-top: 30px;
+
+        img{
+            height: 300px;
+        }
+    }
+}

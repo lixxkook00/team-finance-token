@@ -4,13 +4,17 @@ import './App.scss';
 import Header from './Components/Header'
 import HeaderWrap from './Components/HeaderWrap'
 import StoskList from './Components/StoskList'
+import Introduction from './Components/Introduction'
+import BannerCreate from './Components/BannerCreate'
 
 function App() {
   return (
     <div className="App">
       <Header/>
       <HeaderWrap/>
-      <StoskList />
+      <StoskList/>
+      <Introduction/>
+      <BannerCreate/>
       
       <div className="overlay"></div>
     </div>

@@ -17,6 +17,21 @@
     cursor: pointer;
 }
 
+.btn-second{
+    background-color: rgb(255, 255, 255);
+    font-weight: 600;
+    font-size: 15px;
+    padding: 10px 15px;
+    color: rgb(15, 89, 209) !important;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.btn-second:hover{
+    opacity: .7;
+    cursor: pointer;
+}
+
 // class in line
 .display-flex{
     display: flex;
@@ -38,4 +53,11 @@
 
 .flex-direction-column{
     flex-direction: column !important;
+}
+
+// clear tags
+
+a:hover {
+    text-decoration: none;
+    outline: 0;
 }
