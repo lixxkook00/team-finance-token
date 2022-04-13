@@ -1,6 +1,8 @@
 import React from 'react';
 import './Header.scss'
 
+import {Link} from 'react-router-dom'
+
 const liListHeader = [
     {
         id:0,
@@ -34,9 +36,9 @@ function Header(props) {
        <div className="header">
            <div className="container display-flex justify-content-space-between">
                {/* logo */}
-               <div className="header-logo">
-                    <img src="./img/team-white.png" alt="" />
-                </div>
+               <Link to='/'  className="header-logo">
+                    <img src="/img/team-white.png" alt="" />
+                </Link>
                 {/* option list */}
                 <div className="header-ul display-flex">
                     {
@@ -44,7 +46,7 @@ function Header(props) {
                                 return (
                                     <a key={index} className="header-li">
                                         <div className="header-li-icon">
-                                            <img src={`./img/${li.img}`} alt="" />
+                                            <img src={`/img/${li.img}`} alt="" />
                                         </div>
                                         <div className="header-li-text">
                                             {li.text}

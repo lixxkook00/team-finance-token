@@ -2,6 +2,7 @@ import React from 'react';
 import './StoskList.scss'
 
 import Data from '../../data/data.json'
+import {Link} from 'react-router-dom'
 
 function StoskList(props) {
 
@@ -65,15 +66,18 @@ function StoskList(props) {
                                             <tr key={index}>
                                                 {/* NAME */}
                                                 <th className="stocklist-table-cell-content">
-                                                    <div className="content-name">
-                                                        <img className="img-name" src={`./img/${token.avt}`} alt="" />
-                                                        <div className="content-name-text">
-                                                            <p>{token.name}</p>
-                                                            <p className="full-name">
-                                                                {token.fullName}
-                                                            </p>
+                                                    <Link to={`/view-coin/${token.name}`}>
+                                                        <div className="content-name">
+                                                            <img className="img-name" src={`./img/${token.avt}`} alt="" />
+                                                            <div className="content-name-text">
+                                                                <p>{token.name}</p>
+                                                                <p className="full-name">
+                                                                    {token.fullName}
+                                                                </p>
+                                                            </div>
                                                         </div>
-                                                    </div>
+                                                    </Link>
+                                                    
                                                 </th>
 
                                                 {/* BLOCKCHAIN */}

@@ -1,6 +1,8 @@
 import React from 'react';
 import './HeaderScroll.scss'
 
+import {Link} from 'react-router-dom'
+
 const liListHeader = [
     {
         id:0,
@@ -34,9 +36,9 @@ function HeaderScroll({isHeaderScroll}) {
        <div className={`header-scroll ${isHeaderScroll && 'open'} `}>
            <div className="container display-flex justify-content-space-between">
                {/* logo */}
-               <div className="header-scroll-logo">
-                    <img src="./img/team.png" alt="" />
-                </div>
+               <Link to='/' className="header-scroll-logo">
+                    <img src="/img/team.png" alt="" />
+                </Link>
                 {/* option list */}
                 <div className="header-scroll-ul display-flex">
                     {
@@ -44,7 +46,7 @@ function HeaderScroll({isHeaderScroll}) {
                                 return (
                                     <a key={index} className="header-scroll-li">
                                         <div className="header-scroll-li-icon">
-                                            <img src={`./img/${li.img}`} alt="" />
+                                            <img src={`/img/${li.img}`} alt="" />
                                         </div>
                                         <div className="header-scroll-li-text">
                                             {li.text}

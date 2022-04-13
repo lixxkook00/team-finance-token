@@ -12,7 +12,7 @@ function Introduction(props) {
                     <div className="col-xl-4">
                         <div className="intro-item">
                             <div className="intro-item-img">
-                                <img src="./img/img.svg" alt="" />
+                                <img src="/img/img.svg" alt="" />
                             </div>
                             <div className="intro-item-title">
                                 Lock Liquidity
@@ -25,7 +25,7 @@ function Introduction(props) {
                     <div className="col-xl-4">
                         <div className="intro-item">
                             <div className="intro-item-img ">
-                                <img src="./img/img (1).svg" alt="" />
+                                <img src="/img/img (1).svg" alt="" />
                             </div>
                             <div className="intro-item-title">
                                 Team Token Vesting
@@ -38,7 +38,7 @@ function Introduction(props) {
                     <div className="col-xl-4">
                         <div className="intro-item">
                             <div className="intro-item-img ">
-                                <img src="./img/img (2).svg" alt="" />
+                                <img src="/img/img (2).svg" alt="" />
                             </div>
                             <div className="intro-item-title">
                                 Public Facing Profile

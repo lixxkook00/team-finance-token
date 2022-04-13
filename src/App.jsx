@@ -1,13 +1,18 @@
+
 import {useState,useEffect} from 'react'
 import './App.scss';
 
 import Header from './Components/Header'
 import HeaderScroll from './Components/HeaderScroll'
-import HeaderWrap from './Components/HeaderWrap'
-import StoskList from './Components/StoskList'
-import Introduction from './Components/Introduction'
 import BannerCreate from './Components/BannerCreate'
 import Footer from './Components/Footer'
+
+import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+
+// page
+
+import MainPage from './Page/MainPage'
+import DetailPage from './Page/DetailPage'
 
 function App() {
   
@@ -26,17 +31,29 @@ function App() {
 
   
   return (
-    <div className="App">
-      <Header/>
-      <HeaderScroll isHeaderScroll={isHeaderScroll}/>
-      <HeaderWrap/>
-      <StoskList/>
-      <Introduction/>
-      <BannerCreate/>
-      <Footer/>
-      
-      <div className="overlay"></div>
-    </div>
+    <Router>
+      <div className="App">
+        <Header/>
+        <HeaderScroll isHeaderScroll={isHeaderScroll}/>
+        
+        {/* page */}
+        <Switch>
+              {/* <Route exact path="/" component={MainPage} /> */}
+            <Route exact path="/">
+                <MainPage/>
+            </Route>
+        </Switch>
+
+        <Switch>
+            <Route exact path="/view-coin/:_id" component={DetailPage} />
+        </Switch>
+
+        <BannerCreate/>
+        <Footer/>
+        
+        <div className="overlay"></div>
+      </div>
+    </Router>
   );
 }
 

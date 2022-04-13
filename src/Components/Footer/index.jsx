@@ -8,7 +8,7 @@ function Footer(props) {
                 <div className="row">
                     <div className="col-xl-4">
                         <div className="footer-icon">
-                            <img src="./img/logo-footer.png" alt="" />
+                            <img src="/img/logo-footer.png" alt="" />
                         </div>
                     </div>
                     <div className="col-xl-2">

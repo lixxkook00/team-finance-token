@@ -28,7 +28,7 @@ function BannerCreate(props) {
                     {/* img */}
                     <div className="col-xl-6">
                         <div className="banner-img">
-                            <img src="./img/custom-lockup.png" alt="" />
+                            <img src="/img/custom-lockup.png" alt="" />
                         </div>
                     </div>
                 </div>
