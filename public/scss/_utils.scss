@@ -1,3 +1,5 @@
+@import "./variables";
+
 .btn-primary{
     background: transparent;
     padding: 10px 15px;
@@ -9,6 +11,7 @@
     letter-spacing: 0.28px;
     color: rgb(255, 255, 255);
     margin: 0px;
+    background-color: $primary-blue;
 }
 
 .btn-primary:hover{
