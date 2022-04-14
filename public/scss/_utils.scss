@@ -35,6 +35,25 @@
     cursor: pointer;
 }
 
+.process-contain {
+    position: relative;
+    margin-top: 5px;
+
+    .process-block {
+        background-color: rgb(234, 234, 234);
+        height: 5px;
+        width: 100%;
+        border-radius: 20px;
+        position: absolute;
+    }
+
+    .process-line {
+        height: 5px;
+        border-radius: 20px;
+        position: absolute;
+    }
+}
+
 // class in line
 .display-flex{
     display: flex;
@@ -60,6 +79,14 @@
 
 .mt-30{
     margin-top: 30px;
+}
+
+.mt-600 {
+    margin-top: 600px;
+}
+
+.width-100{
+    width: 100%;
 }
 
 // clear tags
