@@ -6,20 +6,25 @@ import {Link} from 'react-router-dom'
 
 function StoskList(props) {
 
-    const tokenList = Data.token
+    const tokenList = Data.coin
 
     return (
-        <div className="stocklist">
-            <div className="container">
-                <div className="stocklist-container">
-                    {/* input */}
-                    <div className="stocklist-input">
-                        <input type="text" placeholder="Search for a token by name/address/contract"/>
-                        <div className="stocklist-input-btn">
-                            <i className="fa-solid fa-magnifying-glass"></i>
-                        </div>
+        <>
+            <div className="stocklist">
+                <div className="container">
+                    <div className="stocklist-container clear-border-radius-bottom-left-right">
+                        {/* input */}
+                        <div className="stocklist-input">
+                            <input type="text" placeholder="Search for a token by name/address/contract"/>
+                            <div className="stocklist-input-btn">
+                                <i className="fa-solid fa-magnifying-glass"></i>
+                            </div>
+                        </div>  
                     </div>
-
+                </div>
+            </div>
+            <div className="stocklist-table-container">
+                <div className="container">
                     {/* table content */}
                     <div className="stocklist-table">
                         <table>
@@ -115,7 +120,7 @@ function StoskList(props) {
                                                     <div className="content-name">
                                                         <img className="img-token" src="./img/lock-icon.png" alt="" />
                                                         <p className="content-text">
-                                                           {token.tokens} ({token.tokensPercent}%)
+                                                            {token.tokens} ({token.tokensPercent}%)
                                                         </p>
                                                     </div>
                                                 </th>
@@ -169,7 +174,7 @@ function StoskList(props) {
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 

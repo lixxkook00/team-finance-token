@@ -8,8 +8,8 @@ function Introduction(props) {
                 <div className="intro-title">
                 Easy Liquidity Locking & Token Vesting
                 </div>
-                <div className="row">
-                    <div className="col-xl-4">
+                <div className="row centering">
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                         <div className="intro-item">
                             <div className="intro-item-img">
                                 <img src="/img/img.svg" alt="" />
@@ -22,7 +22,7 @@ function Introduction(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4">
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                         <div className="intro-item">
                             <div className="intro-item-img ">
                                 <img src="/img/img (1).svg" alt="" />
@@ -35,7 +35,7 @@ function Introduction(props) {
                             </div>
                         </div>
                     </div>
-                    <div className="col-xl-4">
+                    <div className="col-xl-4 col-lg-6 col-md-6 col-sm-12">
                         <div className="intro-item">
                             <div className="intro-item-img ">
                                 <img src="/img/img (2).svg" alt="" />

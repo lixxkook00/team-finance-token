@@ -270,7 +270,11 @@
     }
 
     &-canvas{
-        height: 300px;
+        // height: 300px;
+        border-top: 1px solid #f0f0f0;
+        .canvasjs-chart-credit{
+            display: none;
+        }
     }
 
     &-event{

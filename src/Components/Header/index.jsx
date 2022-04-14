@@ -40,7 +40,7 @@ function Header(props) {
                     <img src="/img/team-white.png" alt="" />
                 </Link>
                 {/* option list */}
-                <div className="header-ul display-flex">
+                <div className="header-ul display-flex hidden-m-t">
                     {
                         liListHeader.map((li,index) => {
                                 return (
@@ -57,8 +57,11 @@ function Header(props) {
                     }
                 </div>
                 {/* button */}
-                <button className="btn-primary">
+                <button className="btn-primary hidden-m-t">
                     Connect Wallet
+                </button>
+                <button className="btn-primary hidden-pc">
+                    <i className="fa-solid fa-bars"></i>
                 </button>
            </div>
        </div>

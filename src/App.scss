@@ -1,5 +1,6 @@
 @import '../public/scss/utils';
 @import '../public/scss/variables';
+@import '../public/scss/responsive';
 
 *{
     font-family: "Helvetica Neue",
@@ -9,6 +10,7 @@
 
 .App{
     position: relative;
+    overflow: hidden;
 }
 
 .overlay{

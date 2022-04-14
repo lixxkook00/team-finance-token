@@ -1,19 +1,36 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import './DetailPage.scss'
 
 import {Link} from 'react-router-dom'
 
+import data from '../../data/data.json'
+
+import CanvasChart from '../../Components/CanvasChart'
+
 function DetailPage(props) {
+
+    // get ID product
+    let {_id} = props.match.params
+
+    const [currentCoin,setCurrentCoin] = useState([])
+    
+    useEffect(()=> {
+        const getCoin = data.coin.find(product => product.name === _id)
+
+        setCurrentCoin(getCoin)
+
+        window.scrollTo(0, 0);
+    },[])
     return (
         <>
             <div className="detail">
-            <div className="detail-container">
+                <div className="detail-container">
                     <div className="container">
                         <div className="row">
                             {/* direction */}
                             <div className="col-xl-12">
                                 <Link to='/' className="detail-direction">
-                                    <i class="fa-solid fa-arrow-left"></i>
+                                    <i className="fa-solid fa-arrow-left"></i>
                                     <p>Overview</p>
                                 </Link>
                             </div>
@@ -22,22 +39,22 @@ function DetailPage(props) {
                             <div className="col-xl-12">
                                 <div className="detail-row">
                                     <div className="detail-infor">
-                                        <img className="detail-infor-avt" src="/img/token-logo.jpg" alt="" />
+                                        <img className="detail-infor-avt" src={`/img/${currentCoin.avt}`} alt="" />
                                         <div>
                                             <div className="detail-infor-title">
-                                                Everdome
+                                                {currentCoin.fullName}
                                             </div>
                                             <div className="detail-infor-code">
-                                                <img src="/img/erc20_3x.png" alt="" />
+                                                <img src={`/img/erc20_3x.png`} alt="" />
                                                 <p>BSC: 0x475bFaa1848591ae0E6aB69600f48d828f61a80E</p>
-                                                <i class="fa-solid fa-copy"></i>
+                                                <i className="fa-solid fa-copy"></i>
                                                 <img src="/img/iconn.png" alt="" />
                                                 <img src="/img/icon (3).png" alt="" />
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div className="detail-btns">
+                                    <div className="detail-btns hidden-m-t">
                                         <div className="btn-second">
                                             REQUEST HACKEN AUDIT
                                         </div>
@@ -57,11 +74,13 @@ function DetailPage(props) {
                             <div className="col-xl-6 mt-30">
                                     <div className="detail-card">
                                         <div className="detail-card-first">
-                                            <div className="detail-card-title">
-                                                Everdome Lockup Overview
-                                            </div>
-                                            <div className="detail-card-decs">
-                                                View liquidity and DOME lockup information
+                                            <div>
+                                                <div className="detail-card-title">
+                                                    Everdome Lockup Overview
+                                                </div>
+                                                <div className="detail-card-decs">
+                                                    View liquidity and DOME lockup information
+                                                </div>
                                             </div>
                                         </div>
                                         <div className="detail-li detail-overview-li">
@@ -157,6 +176,7 @@ function DetailPage(props) {
                                     </div>
                             </div>
 
+                            {/* chart */}
                             <div className="col-xl-6 mt-30">
                                     <div className="detail-card">
                                         <div className="detail-card-first">
@@ -179,7 +199,7 @@ function DetailPage(props) {
                                             </div>
                                         </div>
                                         <div className="detail-canvas">
-
+                                            <CanvasChart/>
                                         </div>
                                         <div className="detail-card-chart">
                                             <div className="detail-card-row">
@@ -240,9 +260,9 @@ function DetailPage(props) {
                                 {/* li item */}
                                 <div className="detail-event-li mt-30">
                                     <div className="row width-100">
-                                        <div className="col-xl-1 centering">
+                                        <div className="col-xl-1 centering hidden-m-t">
                                             <div className="detail-event-avt">
-                                                <img src="/img/token-logo.jpg" alt="" />
+                                                <img src={`/img/${currentCoin.avt}`} alt="" />
                                             </div>
                                         </div>
                                         
@@ -294,9 +314,9 @@ function DetailPage(props) {
                                 {/* li item */}
                                 <div className="detail-event-li mt-30">
                                     <div className="row width-100">
-                                        <div className="col-xl-1 centering">
+                                        <div className="col-xl-1 centering hidden-m-t">
                                             <div className="detail-event-avt">
-                                                <img src="/img/token-logo.jpg" alt="" />
+                                                <img src={`/img/${currentCoin.avt}`} alt="" />
                                             </div>
                                         </div>
                                         
@@ -348,9 +368,9 @@ function DetailPage(props) {
                                 {/* li item */}
                                 <div className="detail-event-li mt-30">
                                     <div className="row width-100">
-                                        <div className="col-xl-1 centering">
+                                        <div className="col-xl-1 centering hidden-m-t">
                                             <div className="detail-event-avt">
-                                                <img src="/img/token-logo.jpg" alt="" />
+                                                <img src={`/img/${currentCoin.avt}`} alt="" />
                                             </div>
                                         </div>
                                         

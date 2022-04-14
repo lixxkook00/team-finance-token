@@ -1,0 +1,347 @@
+// Motherfucking Iphone 5S
+@media (max-width: 321px) {
+}
+
+/* Mobile Only */
+@media (max-width: 739px) {
+    .hidden-m {
+        display: none !important;
+    }
+
+    .stocklist-container{
+        padding: 14px 0  10px !important;
+        border-bottom-left-radius: 0 !important;
+        border-bottom-right-radius: 0 !important;
+        border-top-left-radius: 0 !important;
+        border-top-right-radius: 0 !important;
+        top: -79px !important;
+    }
+
+    .stocklist {
+        .container {
+            width: 100vw !important;
+            padding-right: 0 !important;
+            padding-left: 0 !important;
+            margin-right: 0 !important;
+            margin-left: 0 !important;
+            max-width: unset !important;
+        }
+    }
+
+    .overlay {
+        height: 700px !important;
+    }
+
+    .header-wrap-title img{
+        height: 27px !important;
+    }
+
+    .header-wrap-title h1{
+        font-size: 25px;
+    }
+
+    .header-wrap-decs{
+        font-size: 14px !important;
+        padding: 0 18px;
+        text-align: center;
+    }
+
+    .banner{
+        .banner-img img {
+            height: 200px !important;
+        }
+    }
+
+    .footer-infor {
+        flex-direction: column;
+        align-items: center;
+
+        p{
+            margin-bottom: 10px;
+        }
+    }
+
+    .detail-card-row{
+        flex-direction: column;
+    }
+
+    .detail-cart-item{
+        display: flex;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+        padding: 7px 0;
+        border-bottom: 1px solid rgb(232, 232, 232);
+    
+        &:last-child{
+            border-bottom: none;
+        }
+    }
+
+    .detail-card-chart {
+        padding: 10px 9px !important;
+    }
+
+    .detail-event-infor-title{
+        width: 100px;
+        font-size: 14px;
+    }
+
+    .detail-event-btn{
+        margin-top: 4px;
+    }
+
+    .footer-infor{
+        p{
+            font-size: 14px;
+        }
+    }
+
+    // table
+    table{
+        thead{
+            tr{
+                th:nth-child(2),
+                th:nth-child(3),
+                th:nth-child(4),
+                th:nth-child(6),
+                th:nth-child(8){
+                    display: none !important;
+                }
+            }
+        }
+
+        tbody{
+            tr {
+            
+                th:nth-child(2),
+                th:nth-child(3),
+                th:nth-child(4),
+                th:nth-child(6),
+                th:nth-child(8) {
+                    display: none !important;
+                }
+            }
+        }
+
+        .content-name-text{
+            p{
+                font-size: 12px !important;
+            }
+        }
+
+        .content-text{
+            font-size: 11px !important;
+        }
+
+        .stocklist-table-cell,
+        .stocklist-table-cell-content{
+            padding: 18px 4px;
+        }
+    }
+}
+
+
+/* Mobile & Tablet */
+@media (max-width: 1023px) {
+
+    .hidden-m-t {
+        display: none !important;
+    }
+
+    .stocklist-container {
+        width: 100% !important;
+    }
+
+    .banner{
+
+        &-content{
+            display: flex;
+            justify-content: center;
+            margin: 70px 0px 0px;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-content-btns{
+            display: flex;
+            justify-content: center;
+        }
+
+        &-content-title{
+            font-size: 20px !important;
+        }
+
+        &-content-decs{
+            width: 100% !important;
+            font-size: 16px !important;
+            text-align: center !important;
+        }
+
+        &-img {
+            display: flex;
+            margin-top: 30px;
+            justify-content: center;
+
+            img{
+                width: 90%;
+                height: auto !important;
+            }
+        }
+    }
+
+    .footer {
+        padding: 60px 30px 30px !important;
+
+        &-row{
+            margin-bottom: 10px;
+        }
+
+        .footer-row-title {
+            text-align: center;
+        }
+        
+        .footer-row-content {
+            text-align: center;
+        }
+        
+        .footer-icon {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+    }
+
+    .header-wrap{
+
+        &-list{
+            flex-wrap: wrap !important;
+        }
+        &-item{
+            width: 100% !important;
+            margin-top: 8px;
+        }
+    }
+
+    .detail{
+        height: 1055px !important;
+    }
+
+    .stocklist-table-container {
+        .container {
+            width: 100vw;
+            margin: 0 !important;
+            padding: 0;
+    
+            .stocklist-table {
+                width: 100vw;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .stocklist-table-container {
+        .container {
+            width: 100vw;
+            margin: 0 !important;
+            padding: 0;
+    
+            .stocklist-table {
+                width: 100vw;
+                padding: 0 10px;
+            }
+        }
+    }
+    
+    .stocklist {
+        .container {
+            width: 100vw !important;
+        }
+    }
+    
+    .stocklist-container {
+        width: 100% !important;
+        position: relative !important;
+        padding-bottom: 26px;
+    }
+    
+    .stocklist-table-container .stocklist-table::before {
+        display: none !important;
+    }
+}
+
+/* Tablet Only */
+
+@media (min-width: 740px) and (max-width: 1023px) {
+    .overlay {
+        height: 700px !important;
+    }
+}
+
+
+
+@media (min-width: 992px) {
+
+}
+
+
+
+/* Tablet to PC low resolution */
+
+@media (min-width: 985px) and (max-width: 1200px) {
+    .stocklist-table-container{
+        .container{
+            width: 100vw;
+            margin: 0 !important;
+            padding: 0;
+
+            .stocklist-table{
+                width: 100vw;
+                padding: 0 10px;
+            }
+        }
+    }
+
+    .stocklist{
+        .container{
+            width: 100vw !important;
+        }
+    }
+
+    .stocklist-container{
+        width: 100% !important;
+        position: relative !important;
+        padding-bottom: 26px;
+    }
+    .stocklist-table-container .stocklist-table::before{
+        display: none !important;
+    }
+}
+
+/* > PC low resolution */
+
+@media (min-width: 1024px) and (max-width: 1239px) {
+
+}
+
+/* Tablet to PC low resolution */
+
+@media (min-width: 1240px) and (max-width: 1326px) {
+
+}
+
+/* PC only */
+
+@media (min-width: 1024px) {
+    .hidden-pc {
+        display: none !important;
+    }
+}
+
+// PC
+@media (min-width: 1200px) {
+
+}
+
+
+@media (min-width: 984px) and (max-width: 1023px) {
+
+}

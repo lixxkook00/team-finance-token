@@ -29,6 +29,9 @@ function App() {
     windowY > 75 ? setIsHeaderScroll(true) : setIsHeaderScroll(false)
   },[windowY])
 
+  useEffect(()=> {
+      window.scrollTo(0, 0);
+  },[])
   
   return (
     <Router>

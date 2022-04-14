@@ -40,7 +40,7 @@ function HeaderScroll({isHeaderScroll}) {
                     <img src="/img/team.png" alt="" />
                 </Link>
                 {/* option list */}
-                <div className="header-scroll-ul display-flex">
+                <div className="header-scroll-ul display-flex hidden-m-t">
                     {
                         liListHeader.map((li,index) => {
                                 return (
@@ -57,8 +57,12 @@ function HeaderScroll({isHeaderScroll}) {
                     }
                 </div>
                 {/* button */}
-                <button className="btn-primary">
+                <button className="btn-primary hidden-m-t">
                     Connect Wallet
+                </button>
+
+                <button className="btn-second hidden-pc">
+                    <i className="fa-solid fa-bars"></i>
                 </button>
            </div>
        </div>

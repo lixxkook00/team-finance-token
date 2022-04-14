@@ -89,6 +89,11 @@
     width: 100%;
 }
 
+.clear-border-radius-bottom-left-right{
+    border-bottom-left-radius: 0 !important;
+    border-bottom-right-radius: 0 !important;
+}
+
 // clear tags
 
 a:hover {

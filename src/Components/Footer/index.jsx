@@ -6,12 +6,12 @@ function Footer(props) {
         <div className="footer">
             <div className="container">
                 <div className="row">
-                    <div className="col-xl-4">
+                    <div className="col-xl-4 col-lg-12">
                         <div className="footer-icon">
                             <img src="/img/logo-footer.png" alt="" />
                         </div>
                     </div>
-                    <div className="col-xl-2">
+                    <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div className="footer-row">
                             <div className="footer-row-title">
                                 Platform
@@ -31,7 +31,7 @@ function Footer(props) {
                         </div>
                     </div>
 
-                    <div className="col-xl-2">
+                    <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div className="footer-row">
                             <div className="footer-row-title">
                                 Lockups
@@ -51,7 +51,7 @@ function Footer(props) {
                         </div>
                     </div>
 
-                    <div className="col-xl-2">
+                    <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div className="footer-row">
                             <div className="footer-row-title">
                                 Company
@@ -71,7 +71,7 @@ function Footer(props) {
                         </div>
                     </div>
 
-                    <div className="col-xl-2">
+                    <div className="col-xl-2 col-lg-6 col-md-6 col-sm-6 col-xs-6">
                         <div className="footer-row">
                             <div className="footer-row-title">
                                 Connect
