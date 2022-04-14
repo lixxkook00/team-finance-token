@@ -2,12 +2,12 @@
     color: #fff;
     position: relative;
     background-color: #F3F7FA;
-    margin-top: 200px;
+    margin-top: 230px;
     height: 600px;
 
     &-container{
         position: absolute;
-        top: -100px;
+        top: -200px;
         width: 100%;
     }
 
@@ -30,6 +30,183 @@
             font-weight: 500;
             color: rgb(255, 255, 255);
             margin-bottom: 2px;
+        }
+    }
+
+    &-row{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 18px;
+    }
+
+    &-infor{
+        display: flex;
+        align-items: center;
+
+        &-avt{
+            border-radius: 50%;
+        }
+
+        img{
+            width: 50px;
+            height: 50px;
+            object-fit: cover;
+            margin-right: 10px;
+        }
+
+        &-title{
+            font-size: 20px;
+            font-weight: bold;
+            line-height: normal;
+            color: rgb(255, 255, 255);
+            margin-bottom: 0px;
+        }
+
+        &-code{
+            display: flex;
+            align-items: center;
+            p{
+                font-size: 14px;
+                color: rgba(255, 255, 255, 0.5);
+                margin-right: 5px;
+            }
+
+            img{
+                height: 15px;
+                width: auto;
+                margin: 5px 5px 5px 0px;
+            }
+            i{
+                margin-right: 8px;
+            }
+        }
+    }
+
+    &-btns{
+        display: flex;
+        height: 32px;
+        .btn-second{
+            font-size: 12px;
+            padding: 4px 15px;
+            text-align: center;
+            border: 1px solid #d9d9d9;
+            white-space: pre;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 15px;
+                object-fit: contain;
+                margin-right: 10px;
+            }
+        }
+    }
+
+    // content
+
+    &-li{
+        height: 94px;
+        display: flex;
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+        -webkit-box-align: center;
+        align-items: center;
+        margin: 0px 20px;
+        min-height: 94px;
+        border-bottom: 1px solid #E8E8E8;
+    }
+
+    &-card{
+        box-shadow: rgb(0 0 0 / 2%) 0px 2.5px 5px 0px;
+        background-color: #fff;
+        width: 100%;
+        border: 1px solid #f0f0f0;
+        border-radius: 2px;
+
+        .detail-li:last-child{
+            border-bottom: 0;
+        }
+
+        &-first{
+            margin-bottom: -1px;
+            padding: 16px 24px;
+            color: rgba(0, 0, 0, .85);
+            font-weight: 500;
+            font-size: 16px;
+            background: transparent;
+            border-bottom: 1px solid #f0f0f0;
+            font-variant: tabular-nums;
+            line-height: 1.5715;
+            list-style: none;
+            font-feature-settings: "tnum",
+            "tnum";
+            font-size: 16px;
+        }
+
+        &-title{
+            font-variant: tabular-nums;
+            line-height: 1.5715;
+            list-style: none;
+            font-feature-settings: "tnum",
+            "tnum";
+            font-weight: bold;
+        }
+
+        &-decs{
+            font-size: 12px;
+            font-weight: normal;
+            color: rgb(153, 153, 153);
+        }
+    }
+
+    &-overview{
+        &-li{
+            display: flex;
+            justify-content: space-between;
+            color: black;
+        }
+
+        &-infor{
+            display: flex;
+            align-items: center;
+            img{
+                height: 20px;
+                object-fit: contain;
+                margin-right: 10px;
+            }
+            &_name{
+                font-size: 14px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: normal;
+                letter-spacing: 0.33px;
+                color: rgb(51, 51, 51);
+                text-transform: capitalize;
+            }
+
+            &_decs{
+                font-size: 12px;
+                font-weight: 500;
+                font-stretch: normal;
+                font-style: normal;
+                line-height: 1.6;
+                letter-spacing: 0.33px;
+                color: rgb(153, 153, 153);
+                text-transform: capitalize;
+            }
+        }
+
+        &-value{
+            font-size: 14px;
+            font-weight: 500;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: normal;
+            letter-spacing: 0.33px;
+            color: rgb(51, 51, 51);
+            text-transform: capitalize;
         }
     }
 }
