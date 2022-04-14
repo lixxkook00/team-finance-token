@@ -31,3 +31,37 @@ p {
 img{
     flex-shrink: 0 !important;
 }
+
+.header-nav{
+    padding: 5px 15px;
+
+    &-logo{
+        display: flex;
+        justify-content: space-between;
+        img{
+            object-fit: contain;
+            height: 29px;
+            margin: 20px 0px;
+        }
+    }
+
+    &-item{
+        display: flex;
+        font-size: 14px;
+        color: rgb(0, 0, 0);
+        font-weight: 600;
+        align-items: center;
+        padding: 15px 0px;
+        border-bottom: 1px solid rgb(247, 247, 247);
+        img{
+            width: 12px;
+            object-fit: contain;
+            margin-right: 5px;
+        }
+    }
+
+    button{
+        height: 50px;
+        outline: none !important;
+    }
+}
