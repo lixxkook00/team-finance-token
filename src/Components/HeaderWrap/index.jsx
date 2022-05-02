@@ -30,7 +30,7 @@ function HeaderWrap(props) {
                     </div>
                     <div className="header-wrap-item">
                         <div className="item-img">
-                            <img src="/img/icon.png" alt="" />
+                            <img src="/img/icon (1).png" alt="" />
                         </div>
                         <div className="item-infor">
                             <div className="item-infor-title">
@@ -43,7 +43,7 @@ function HeaderWrap(props) {
                     </div>
                     <div className="header-wrap-item">
                         <div className="item-img">
-                            <img src="/img/icon.png" alt="" />
+                            <img src="/img/icon (2).png" alt="" />
                         </div>
                         <div className="item-infor">
                             <div className="item-infor-title">

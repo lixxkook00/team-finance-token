@@ -274,6 +274,34 @@
     .overlay {
         height: 700px !important;
     }
+
+    .stocklist-table-cell{
+        padding: 0 !important;
+    }
+
+    .stocklist-table-cell-content{
+        padding: 10px 2px !important;
+    }
+
+    table {
+        thead {
+            tr {
+                th:nth-child(6),
+                th:nth-child(8) {
+                    display: none !important;
+                }
+            }
+        }
+    
+        tbody {
+            tr {
+                th:nth-child(6),
+                th:nth-child(8) {
+                    display: none !important;
+                }
+            }
+        }
+    }
 }
 
 

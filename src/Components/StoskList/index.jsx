@@ -155,9 +155,9 @@ function StoskList(props) {
                                                 {/* ---- */}
                                                 <th className="stocklist-table-cell-content">
                                                     <div className="content-name">
-                                                        <a href="" className="btn-view">
+                                                        <Link to={`/view-coin/${token.name}`} className="btn-view">
                                                             View
-                                                        </a>
+                                                        </Link>
                                                     </div>
                                                 </th>
                                             </tr>

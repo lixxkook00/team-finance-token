@@ -77,7 +77,7 @@ function Header(props) {
                     {
                         liListHeader.map((item,index) => {
                             return (
-                                <div className="header-nav-item">
+                                <div key={index} className="header-nav-item">
                                     <img src={`/img/${item.imgGray}`} alt="" />
                                     <p>{item.text}</p>
                                 </div>

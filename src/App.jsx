@@ -29,9 +29,28 @@ function App() {
     windowY > 75 ? setIsHeaderScroll(true) : setIsHeaderScroll(false)
   },[windowY])
 
+  // scroll to top when change router
   useEffect(()=> {
       window.scrollTo(0, 0);
   },[])
+
+  const [loading, setLoading] = useState(true);
+    
+  useEffect(() => {
+    // Loading function to load data or 
+    // fake it using setTimeout;
+    const loadData = async () => {
+
+      // Wait for two second
+      await new Promise((r) => setTimeout(r, 2000));
+
+      // Toggle loading state
+      setLoading((loading) => !loading);
+    };
+      
+    loadData();
+  }, [])
+
   
   return (
     <Router>
@@ -41,7 +60,6 @@ function App() {
         
         {/* page */}
         <Switch>
-              {/* <Route exact path="/" component={MainPage} /> */}
             <Route exact path="/">
                 <MainPage/>
             </Route>

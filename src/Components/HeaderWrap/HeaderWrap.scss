@@ -33,6 +33,12 @@
         -webkit-box-align: center;
         align-items: center;
 
+        &:nth-child(2) img,
+        &:nth-child(3) img{
+            width: 20px;
+            height: auto !important;
+        }
+
        .item{
            &-img{
                 display: flex;
